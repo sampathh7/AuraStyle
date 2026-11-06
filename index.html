@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="dark" style="background-color: #090D14; color: #F1F5F9;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AuraStyle · Visual Shopping, Book Deals & Universal Search</title>
+    <meta name="description" content="Authentic retailer product images, visual book cover search with multi-store price comparisons, and universal cross-store internet shopping." />
+    <meta property="og:title" content="AuraStyle · Visual Shopping, Book Deals & Universal Search" />
+    <meta property="og:description" content="Authentic retailer product images, visual book cover search with multi-store price comparisons, and universal cross-store internet shopping." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#090D14" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #090D14 !important;
+        color: #F8FAFC !important;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        min-height: 100vh;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+
+    <script>
+      try {
+        if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(regs) {
+            for (var reg of regs) { reg.unregister(); }
+          }).catch(function() {});
+        }
+      } catch (e) {}
+      try {
+        if (typeof window !== 'undefined' && 'caches' in window) {
+          caches.keys().then(function(names) {
+            for (var name of names) { caches.delete(name); }
+          }).catch(function() {});
+        }
+      } catch (e) {}
+      window.addEventListener('error', function(e) {
+        console.error('App Runtime Error:', e.error || e.message);
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('Unhandled Promise Rejection:', e.reason);
+      });
+    </script>
+  </head>
+  <body class="bg-[#090D14] text-slate-100 antialiased selection:bg-amber-400/20 selection:text-amber-500 min-h-screen" style="background-color: #090D14;">
+    <div id="root">
+      <!-- High-fidelity instant splash so screen is never blank while scripts initialize -->
+      <div style="min-height: 100vh; background-color: #090D14; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center; color: #FFFFFF;">
+        <div style="width: 58px; height: 58px; border-radius: 20px; background: #FFFC00; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 28px rgba(255, 252, 0, 0.35); margin-bottom: 20px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div style="font-size: 22px; font-weight: 700; margin-bottom: 8px; font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.02em;">AuraStyle</div>
+        <div style="font-size: 13px; color: #94A3B8; margin-bottom: 24px;">Snapchat 3D Bitmoji Studio &amp; AI Deal Engine...</div>
+        <div style="width: 28px; height: 28px; border: 3px solid #1E293B; border-top-color: #FFFC00; border-radius: 50%; animation: aura-spin 0.75s linear infinite;"></div>
+        <style>@keyframes aura-spin { to { transform: rotate(360deg); } }</style>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

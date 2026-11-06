@@ -1,0 +1,6 @@
+{
+  "name": "AuraStyle",
+  "description": "AI-driven event outfit recreation, global & Indian budget deal discovery, collaborative event capsule boards, and offline style lookbooks.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
